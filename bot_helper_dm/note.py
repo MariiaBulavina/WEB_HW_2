@@ -1,4 +1,3 @@
-
 class Note:
 
     def __init__(self, title: str, text: str) -> None:

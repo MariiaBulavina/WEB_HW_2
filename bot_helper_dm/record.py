@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from .name import Name
-from .birthday import Birthday
-from .phone import Phone
-from .address import Address
-from .email_address import Email
+from name import Name
+from birthday import Birthday
+from phone import Phone
+from address import Address
+from email_address import Email
 
 
 class Record:

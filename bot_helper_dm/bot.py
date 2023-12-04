@@ -2,14 +2,14 @@ import re
 
 from prompt_toolkit import prompt
 
-from .prmt import get_completer
-from .phone import PhoneError
-from .record import Record
-from .addressbook import AddressBook
-from .birthday import BirthdayError
-from .note import Note
-from .notebook import NoteBook
-from .user_intaraction import ContactTable, NoteTable, HelpTable
+from prmt import get_completer
+from phone import PhoneError
+from record import Record
+from addressbook import AddressBook
+from birthday import BirthdayError
+from note import Note
+from notebook import NoteBook
+from user_intaraction import ContactTable, NoteTable, HelpTable
 
 book = AddressBook()
 notes = NoteBook()

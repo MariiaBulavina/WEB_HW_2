@@ -1,7 +1,7 @@
 from collections import UserDict
 
-from .save_load import SaverLoader
-from .user_intaraction import AddressbookTable
+from save_load import SaverLoader
+from user_intaraction import AddressbookTable
 
 
 class AddressBook(UserDict, SaverLoader, AddressbookTable):

@@ -1,7 +1,7 @@
 from collections import UserDict
 
-from .save_load import SaverLoader
-from .user_intaraction import NotebookTable
+from save_load import SaverLoader
+from user_intaraction import NotebookTable
 
 
 class NoteBook(UserDict, SaverLoader, NotebookTable):
