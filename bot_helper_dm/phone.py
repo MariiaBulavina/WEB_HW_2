@@ -1,5 +1,6 @@
 from field import Field
 
+
 class PhoneError(Exception):
     ...
 
@@ -15,6 +16,7 @@ class Phone(Field):
     
     @value.setter
     def value(self, value: str):
+        
         if len(str(value)) == 10 and str(value).isdigit():
             self.__value = value
         else:

@@ -1,6 +1,8 @@
 import pickle
 
+
 class SaverLoader:
+    
     def save(self, file_name):
         with open(file_name, 'wb') as file:
             pickle.dump(self, file)

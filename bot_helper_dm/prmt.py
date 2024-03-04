@@ -1,4 +1,3 @@
-from prompt_toolkit import prompt
 from prompt_toolkit.completion import NestedCompleter
 
 def get_completer():
@@ -14,7 +13,7 @@ def get_completer():
             'email': None,
             'address': None,
             'note': None,
-            'tegs': None},
+            'tags': None},
 
         'show': {
             'all': {
@@ -31,7 +30,7 @@ def get_completer():
         'remove': {
             'phone': None,
             'email': None,
-            'teg': None},   
+            'tag': None},   
 
 
         'find': {

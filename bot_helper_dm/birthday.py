@@ -2,6 +2,7 @@ from datetime import datetime
 
 from field import Field
 
+
 class BirthdayError(Exception):
     pass
 

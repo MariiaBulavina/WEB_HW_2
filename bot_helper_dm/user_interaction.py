@@ -23,16 +23,15 @@ class AddressbookTable(Table):
         return result
 
 
-
 class NotebookTable(Table):
 
     def create_table(self):
         data = [
-        ['title', 'text', 'tegs']
+        ['title', 'text', 'tags']
     ]
 
         for note in self.data.values():
-            line = [note.title, note.text, "; ".join([str(teg) for teg in note.tegs])]
+            line = [note.title, note.text, "; ".join([str(tag) for tag in note.tags])]
             data.append(line)
 
         result = tabulate(data,headers='firstrow',tablefmt='fancy_grid')
@@ -58,11 +57,11 @@ class NoteTable(Table):
 
     def create_table(self, notes):
         data = [
-        ['title', 'text', 'tegs']
+        ['title', 'text', 'tags']
     ]
         
         for note in notes:
-            line = [note.title, note.text, "; ".join([str(teg) for teg in note.tegs])]
+            line = [note.title, note.text, "; ".join([str(tag) for tag in note.tags])]
             data.append(line)
 
         result = tabulate(data,headers='firstrow',tablefmt='fancy_grid')
@@ -104,8 +103,8 @@ class HelpTable(Table):
                 ['change note <title> <text>', 'to change a note'],
                 ['show all notes', 'to see the entire notebook'],
 
-                ['add tegs <title> <#teg>', 'to add a teg'],
-                ['remove teg <title> <#teg>', 'to remove a teg']]
+                ['add tags <title> <#tag>', 'to add a tag'],
+                ['remove tag <title> <#tag>', 'to remove a tag']]
 
         result = tabulate(data,headers='firstrow',tablefmt='fancy_grid')
         return result    
